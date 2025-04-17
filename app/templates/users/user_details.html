@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>User {{ user.name }}</title>
+</head>
+
+<body>
+  <h1>{{ user.name }} ({{ user.ssn }})</h1>
+
+  <ul>
+    <li>Age: {{ user.age }}</li>
+    <li>Email: {{ user.email }}</li>
+  </ul>
+
+  <a href="{% url 'app:user_list' %}">Back to index</a>
+</body>
+
+</html>
